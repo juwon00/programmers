@@ -11,7 +11,7 @@ def solution(n, lost, reserve):
             reserve.remove(i)       # 여분 체육복이 있는데 잃어버렸을 때인 경우를 제외하는 경우다
             lost.remove(i)          # 이런 사람이 있다면 각 배열에서 지운 후 answer에 +1했다
             
-    for j in lost[:]:               # 앞뒤에 빌려줄 사람이 있다면 빌려오고 +1을 한 후
+    for j in lost[:]:               # 앞뒤에 빌려줄 사람이 있다면 빌려오고 +1 한 후
         if j - 1 in reserve:        # 빌려준 사람을 reserve리스트에서 제외한다
             answer += 1
             reserve.remove(j-1)
