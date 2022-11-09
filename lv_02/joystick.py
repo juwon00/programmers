@@ -38,7 +38,7 @@ def solution(name):
             answer = len(name) - 1
     
     # ! 양 옆으로 움직이는 회로 다시 생각해야됨 
-    
+     
     
     
         
